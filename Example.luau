@@ -1,6 +1,4 @@
-local sealz = game:GetService('RunService'):IsStudio() and require(script:WaitForChild('Interface'))
--- please cache the ui source code ( you can use my sealz core module for cache system SealzCore:Fetch(url , duration)) --
-	or loadstring(game:HttpGet("https://gitlab.com/not4lpaca/sealz-ui/-/raw/main/source/interface.luau"))();
+local sealz = loadstring(game:HttpGet("https://raw.githubusercontent.com/getnilinstances/sealz/refs/heads/main/source/interface.luau"))();
 
 local water = sealz:Watermark();
 local notify = sealz:Notification();
